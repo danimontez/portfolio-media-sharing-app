@@ -1,0 +1,25 @@
+[project]
+name = "media-sharing-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "danimontez.dev", email = "danimontez.dev@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastapi-users[sqlalchemy]>=15.0.5",
+    "fastapi[standard]>=0.142.2",
+    "imagekitio>=5.10.0",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.64.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+media-sharing-app = "media_sharing_app:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
